@@ -27,7 +27,7 @@ img {
 }
 img:hover {
     -webkit-filter: blur(10px);
-    filter: blur(10px) opacity(30%);
+    filter: blur(10px) opacity(50%) grayscale(50%);
     transition: 0.5s;
 }
 img:hover 
