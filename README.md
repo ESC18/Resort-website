@@ -1,4 +1,4 @@
-#Resort Website#
+#Resort Website
 
 ####By Elijah Shawn Cartwright
 
