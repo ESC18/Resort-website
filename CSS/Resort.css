@@ -27,10 +27,41 @@ img {
 }
 img:hover {
     -webkit-filter: blur(10px);
-    filter: blur(10px) opacity(50%) grayscale(50%);
+    filter: blur(10px) opacity(70%) grayscale(80%);
     transition: 0.5s;
 }
-img:hover 
+.join {
+    position: absolute;
+    color: black;
+    font-size: 40px;
+    z-index: 30;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    width: 150px;
+    height: 90px;
+    background-color: rgba(240, 248, 255, 0.486);
+    border: 2px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0%;
+    text-align: center;
+    transition: 0.1s;
+}
+img:hover + .join {
+    opacity: 100%;
+    transition: 0.25s;
+}
+.join:hover + img{
+    -webkit-filter: blur(10px);
+    filter: blur(10px) opacity(70%) grayscale(80%);
+    transition: 0.25s;
+}
+.join:hover {
+    opacity: 100%;
+    transition: 0.25s;
+    background-color: aliceblue;
+}
 .footer {
     position: absolute;
     background-color: aliceblue;
