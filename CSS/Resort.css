@@ -5,7 +5,7 @@
 }
 body {
     background-color: aquamarine;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .Logo {
     position: absolute;
@@ -17,6 +17,14 @@ body {
     text-align: center;
     padding: 20px;
     z-index: 20;
+    text-decoration: none;
+
+    transition: 0.1s;
+}
+.Logo:hover {
+    color:rgb(156, 156, 156);
+    transition: 0.2s;
+    filter: blur(1px);
 }
 img {
     position: absolute;
@@ -75,13 +83,11 @@ ul {
     position: relative;
     list-style-type: none;
     left: 26%;
+    top: 20px;
 }
 li {
     float: left;
     position: relative;
-}
-li:hover {
-    color:rgb(127, 129, 255);
 }
 li a {
     font-size: 23px;
@@ -90,9 +96,36 @@ li a {
     text-align: center;
     text-decoration: none;
     padding-left: 50px;
-    transition: 0.05s;
+    transition: 0.1s;
 }
 li a:hover {
     color:rgb(57, 60, 255);
-    transition: 0.1s;
+    transition: 0.2s;
+}
+a:visited {
+    text-decoration: none;
+}  
+.Accomm {
+    position: absolute;
+    z-index: 30;
+    top: 70px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 45.5%
+}
+.active {
+    position: absolute;
+    z-index: 30;
+    top: 70px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 47.5%
+}
+.Arrange {
+    position: absolute;
+    z-index: 30;
+    top: 70px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 46.5%
 }
